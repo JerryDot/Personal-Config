@@ -1,0 +1,50 @@
+{
+  "editor.mouseWheelZoom": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "python.testing.unittestEnabled": true,
+  "python.testing.unittestArgs": AS_APPROPRIATE,
+  "python.linting.enabled": true,
+  "python.linting.mypyEnabled": true,
+  "python.linting.mypyArgs": [
+    "--config",
+    PATH_TO_CONFIG_FILE,
+    "--strict"
+  ],
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": [
+    "--config",
+    PATH_TO_CONFIG_FILE
+  ],
+  "python.analysis.extraPaths": ["~/env/bin/python3", AS_APPROPRIATE],
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "launch": {
+    "inputs": [],
+    "configurations": [],
+    "compounds": []
+  },
+  "python.sortImports.args": [
+    "--settings-path",
+    PATH_TO_ISORT_CONFIG_FILE
+  ],
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "remote.SSH.showLoginTerminal": true,
+  "remote.SSH.useLocalServer": false,
+  "remote.SSH.configFile": PATH_TO_SSH_CONFIG_FILE,
+  "update.enableWindowsBackgroundUpdates": false,
+  "update.mode": "start",
+  "gitlens.gitCommands.skipConfirmations": ["fetch:command", "switch:command"],
+  "yaml.schemas": {
+    "file:///home/admin/.vscode-server/extensions/atlassian.atlascode-2.10.9/resources/schemas/pipelines-schema.json": AS_APPROPRIATE
+  },
+  "redhat.telemetry.enabled": false,
+  "workbench.enableExperiments": false,
+  "telemetry.telemetryLevel": "off",
+  "editor.fontFamily": "'Victor Mono', Consolas, 'Courier New', monospace",
+  "window.zoomLevel": 1
+}

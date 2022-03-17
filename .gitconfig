@@ -1,0 +1,18 @@
+[core]
+        autocrlf = false
+        pager = less -Xr
+[user]
+        email = XXXXXXX
+        name = XXXXXX
+[alias]
+        co = checkout
+        comma = !git add -A && git commit -m
+        stacom = !git stash --include-untracked -m "staco"  && git checkout $1 && :
+        retcom = !git checkout - && git stash pop && :
+        review = !git checkout $1 && git pull && git reset $(git merge-base HEAD master) && :
+        last = log -1 HEAD
+        poosh = push --set-upstream origin HEAD
+        current = rev-parse --abbrev-ref HEAD
+        cooo = !git stash --all && git co $1 && git stash apply && :
+[pull]
+        ff = only
