@@ -1,6 +1,7 @@
 [core]
         autocrlf = false
         pager = less -Xr
+        editor = vim
 [user]
         email = XXXXXXX
         name = XXXXXX
@@ -14,5 +15,6 @@
         poosh = push --set-upstream origin HEAD
         current = rev-parse --abbrev-ref HEAD
         cooo = !git stash --all && git co $1 && git stash apply && :
+        catchup = !git stash --all --include-untracked -m "catchup" && git pull origin $(git branch --show-current) && git stash pop && :
 [pull]
         ff = only
